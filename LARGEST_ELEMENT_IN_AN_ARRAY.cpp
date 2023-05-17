@@ -1,0 +1,44 @@
+
+#include<iostream>
+
+ using namespace std ;
+ 
+ int LarNo_5825( int [], int ) ;
+ 
+ int main()
+ {
+     
+ int n_5825 , i_5825;
+ 
+ cout << "Enter the size of array :";
+ cin >>  n_5825;
+ 
+ int a_5825 [ n_5825 ] ;
+ 
+ cout << "Enter the elements:\n";
+ 
+ for( i_5825=0 ; i_5825<n_5825; i_5825++ )
+ 
+    cin>>a_5825 [ i_5825 ] ;
+
+    cout<< "The largest no. in the array is: "<< LarNo_5825( a_5825 , n_5825 )<<endl;
+ 
+ return 0;
+
+ }
+ 
+int LarNo_5825 ( int x_5825[], int m_5825)
+
+{
+    int i_5825, le_5825=0;
+
+for( i_5825=0; i_5825<m_5825 ; i_5825++ )
+
+if( le_5825 < x_5825[ i_5825] )
+
+le_5825= x_5825 [ i_5825 ] ;
+
+return le_5825;
+
+}
+
